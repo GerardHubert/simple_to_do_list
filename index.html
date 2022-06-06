@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Simple to-do list</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <h1>Ma liste de jeux à faire</h1>
+
+    <section id="list" class="to-do">
+        <h3 class="subtitle">A faire</h3>
+        <div id="games_list"></div>
+    </section>
+
+    <form id="add_game_form" action="get">
+        <input type="text" name="game" id="game_name_input">
+        <button id="add_button" class="btn" disabled autocomplete="on">Ajouter un jeu</button>
+    </form>
+
+    <script src="Addgame.js"></script>
+</body>
+
+</html>
